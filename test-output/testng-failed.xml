@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="2" name="Failed suite [All Test Suite]">
+  <parameter name="password" value="admin1234"/>
+  <parameter name="usename" value="Admin"/>
+  <parameter name="username" value="Admin1"/>
+  <test name="CorrectPassWord(failed)" preserve-order="true">
+    <parameter name="password" value="admin123"/>
+    <parameter name="usename" value="Admin1"/>
+    <classes>
+      <class name="Ddlogintestcases.CorrectPassWord">
+        <methods>
+          <include name="loginwithcorrectpassword"/>
+        </methods>
+      </class> <!-- Ddlogintestcases.CorrectPassWord -->
+    </classes>
+  </test> <!-- CorrectPassWord(failed) -->
+  <test name="BothCorrect(failed)" preserve-order="true">
+    <parameter name="password" value="admin123"/>
+    <parameter name="usename" value="Admin"/>
+    <classes>
+      <class name="Ddlogintestcases.BothCorrect">
+        <methods>
+          <include name="loginsuccess"/>
+        </methods>
+      </class> <!-- Ddlogintestcases.BothCorrect -->
+    </classes>
+  </test> <!-- BothCorrect(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
