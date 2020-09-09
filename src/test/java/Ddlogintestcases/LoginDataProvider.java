@@ -8,16 +8,22 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import java.io.FileInputStream;
+
 public class LoginDataProvider {
 
-    String[][] data = {
-            {"Admin", "admin12"},
-            {"Admin1", "admin123"},
-            {"Admin", "admin123"},
-            {"Admin1", "admin12"}
+
+    String[][] data =null;
 
 
-    };
+//            {
+//            {"Admin", "admin12"},
+//            {"Admin1", "admin123"},
+//            {"Admin", "admin123"},
+//            {"Admin1", "admin12"}
+//
+//
+//    };
 
 
     @DataProvider(name = "logindata")
@@ -25,6 +31,8 @@ public class LoginDataProvider {
         return data;
 
     }
+
+
 
 
         @Test(dataProvider ="logindata" )

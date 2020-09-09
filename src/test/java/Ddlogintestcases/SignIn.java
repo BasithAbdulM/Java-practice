@@ -14,8 +14,7 @@ public class SignIn {
         System.setProperty("webdriver.chrome.driver", "src/driver/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("http://opensource-demo.orangehrmlive.com/index.php/auth/validateCredentials");
-        ExcelDP excelDP=new ExcelDP();
-        excelDP.readexel();
+
 
     }
 }
